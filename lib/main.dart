@@ -3,13 +3,16 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
+void pr(){
+  print(5);
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    pr();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
