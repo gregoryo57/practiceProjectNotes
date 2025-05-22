@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 void pr(){
-  print(5);
+  print('\nbelloooo');
 }
 
 class MyApp extends StatelessWidget {
