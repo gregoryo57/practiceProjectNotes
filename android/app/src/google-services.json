@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470573374022",
+    "project_id": "noteify-90951",
+    "storage_bucket": "noteify-90951.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470573374022:android:0cc30377c4af30fedf0847",
+        "android_client_info": {
+          "package_name": "com.example.proj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjp4Xj3LFCGMBL9glv-qvYX7TMSABLDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
