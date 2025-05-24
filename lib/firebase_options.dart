@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +41,49 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA0B23QIj-yHkvjJP9pulbN6iahT6RXcGQ',
-    appId: '1:936895988304:android:05801009ca511c882a8755',
-    messagingSenderId: '936895988304',
-    projectId: 'device-streaming-15d4eaea',
-    storageBucket: 'device-streaming-15d4eaea.firebasestorage.app',
+    apiKey: 'AIzaSyAjp4Xj3LFCGMBL9glv-qvYX7TMSABLDCE',
+    appId: '1:470573374022:android:0cc30377c4af30fedf0847',
+    messagingSenderId: '470573374022',
+    projectId: 'noteify-90951',
+    storageBucket: 'noteify-90951.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCQGudgM2-ohoV70yf5OssOdXct3JxGRbc',
-    appId: '1:936895988304:ios:8307ca966be443352a8755',
-    messagingSenderId: '936895988304',
-    projectId: 'device-streaming-15d4eaea',
-    storageBucket: 'device-streaming-15d4eaea.firebasestorage.app',
+    apiKey: 'AIzaSyBuNdCHfH6epEK_e2auYqWIoXJc6m6lfFE',
+    appId: '1:470573374022:ios:e6dee36e9f6d8e33df0847',
+    messagingSenderId: '470573374022',
+    projectId: 'noteify-90951',
+    storageBucket: 'noteify-90951.firebasestorage.app',
     iosBundleId: 'com.example.proj',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCtHQppi7u33WkNVTtGjWcNKE-g7RYVcPo',
+    appId: '1:470573374022:web:b25761daf28e9b07df0847',
+    messagingSenderId: '470573374022',
+    projectId: 'noteify-90951',
+    authDomain: 'noteify-90951.firebaseapp.com',
+    storageBucket: 'noteify-90951.firebasestorage.app',
+    measurementId: 'G-PZQLJJ4YTR',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBuNdCHfH6epEK_e2auYqWIoXJc6m6lfFE',
+    appId: '1:470573374022:ios:e6dee36e9f6d8e33df0847',
+    messagingSenderId: '470573374022',
+    projectId: 'noteify-90951',
+    storageBucket: 'noteify-90951.firebasestorage.app',
+    iosBundleId: 'com.example.proj',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCtHQppi7u33WkNVTtGjWcNKE-g7RYVcPo',
+    appId: '1:470573374022:web:488d5e322003792cdf0847',
+    messagingSenderId: '470573374022',
+    projectId: 'noteify-90951',
+    authDomain: 'noteify-90951.firebaseapp.com',
+    storageBucket: 'noteify-90951.firebasestorage.app',
+    measurementId: 'G-XZXKRR69PR',
+  );
+
 }
